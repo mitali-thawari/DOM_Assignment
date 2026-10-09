@@ -4,24 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assignment2.css">
+    <link rel="stylesheet" href="assignment1.css">
     <title>Document</title>
 </head>
 
 <body>
-    <section id="colorname">
-    <h1>Color Picker</h1>
-    <div class="d1">
-        <button id="colorname1" onclick="one0e0e0()" class="cont1">#e0e0e0</button>
-        <button id="colorname2" onclick="on6fcf97()" class="cont2">#6fcf97</button>
-        <button id="colorname3" onclick="on56ccf2()" class="cont3">#56ccf2</button>
-        <button id="colorname4" onclick="onbb6bd9()" class="cont4">#bb6bd9</button>
+    <div class="d2" id="click">
+        <div class="cont1">
+            <img src="image/spring.jpg" id="spring">
+            <img src="image/summer.jpg" id="summer">
+        </div>
+
+        <div class="cont2">
+            <img src="image/autum.jpg" id="autumn">
+            <img src="image/winter.jpg" id="winter">
+        </div>
+        <section>
+            <button onclick="onspring()" class="btn1">Spring</button>
+            <button onclick="onsummer()" class="btn2">Summer</button>
+            <button onclick="onautumn()" class="btn3">Autumn</button>
+            <button onclick="onwinter()" class="btn4">Winter</button>
+        </section>
     </div>
-    <button id="colorname5" onclick="onffffff()"  class="cont">Background Color</button>
-    <p>Try clicking on one the colors above to <br>
-       change the background color of this page!</p>
-    </section>
-    <script src="assignment2.js"></script>
+    <script src="assignment1.js"></script>
 </body>
 
 </html>

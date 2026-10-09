@@ -1,26 +1,28 @@
-let colorname = document.getElementById("colorname");
+let springE1 = document.getElementById("spring");
+let summerE1 = document.getElementById("summer");
+let autumnE1 = document.getElementById("autumn");
+let winterE1 = document.getElementById("winter");
 
-function one0e0e0() {
-
-   colorname.style.backgroundColor = "#e0e0e0"
-
-}
-function on6fcf97() {
-
-    colorname.style.backgroundColor = "#6fcf97";
-
-}
-function on56ccf2() {
-
-    colorname.style.backgroundColor = "#56ccf2";
+function showSeason(season) {
+    let seasons = [springE1, summerE1, autumnE1, winterE1];
+    for (let i = 0; i < seasons.length; i++) {
+        seasons[i].style.display = "none";
+        season.style.height = "600px";
+        season.style.width = "400px";
+        season.style.display = "inline";
+    }
 
 }
-function onbb6bd9() {
-    colorname.style.backgroundColor = "#bb6bd9"
+function onspring() {
+    showSeason(springE1);
 
 }
-function onffffff() {
-
-    colorname.style.backgroundColor = "#ffffff"
-
+function onsummer() {
+    showSeason(summerE1);
+}
+function onautumn() {
+    showSeason(autumnE1);
+}
+function onwinter() {
+    showSeason(winterE1);
 }
